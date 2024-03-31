@@ -29,6 +29,10 @@ public class UserService {
 	    
 	    return result;
 	}
+	
+	public User insert(User user) {
+		return repository.insert(user);
+	}
 
 	
 }
