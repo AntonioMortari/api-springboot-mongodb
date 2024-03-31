@@ -33,6 +33,11 @@ public class UserService {
 	public User insert(User user) {
 		return repository.insert(user);
 	}
+	
+	public void delete(String id) {
+		findOne(id);
+		repository.deleteById(id);
+	}
 
 	
 }
